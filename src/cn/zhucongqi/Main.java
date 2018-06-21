@@ -1,12 +1,11 @@
 package cn.zhucongqi;
 
-import com.jfinal.ext.config.StandaloneDbConfig;
-
+import com.jfinal.ext.config.StandaloneAppConfig;
 
 public class Main {
 
 	public static void main(String[] args) {
-		StandaloneDbConfig.startGe();
+		StandaloneAppConfig.startGe();
 		
 //		User zcq = new User();
 //		zcq.setId(new BigInteger("0"));

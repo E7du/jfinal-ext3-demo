@@ -9,7 +9,6 @@ import com.jfinal.config.Interceptors;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
 import com.jfinal.ext.config.JFinalConfigExt;
-import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.template.Engine;
 
 /**
@@ -32,11 +31,6 @@ public class Config extends JFinalConfigExt {
 	}
 
 	@Override
-	public void configTablesMapping(String configname, ActiveRecordPlugin arp) {
-		
-	}
-
-	@Override
 	public void configMoreInterceptors(Interceptors me) {
 		
 	}
@@ -52,7 +46,7 @@ public class Config extends JFinalConfigExt {
 	}
 
 	@Override
-	public void configEngine(Engine me) {
+	public void configEngineMore(Engine e) {
 		
 	}
 
