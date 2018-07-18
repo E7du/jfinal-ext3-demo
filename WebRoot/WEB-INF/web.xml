@@ -33,4 +33,12 @@
     <error-code>500</error-code>
     <location>/WEB-INF/errorpages/500.jsp</location>
   </error-page>
+  <servlet>
+      <servlet-name>DruidStatView</servlet-name>
+      <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>DruidStatView</servlet-name>
+      <url-pattern>/druid/*</url-pattern>
+  </servlet-mapping>
 </web-app>
